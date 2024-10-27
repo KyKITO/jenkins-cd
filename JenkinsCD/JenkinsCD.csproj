@@ -4,11 +4,41 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+      <Content Include="obj\Debug\net8.0\apphost.exe" />
+      <Content Include="obj\Debug\net8.0\JenkinsCD.AssemblyInfoInputs.cache" />
+      <Content Include="obj\Debug\net8.0\JenkinsCD.csproj.AssemblyReference.cache" />
+      <Content Include="obj\Debug\net8.0\JenkinsCD.csproj.CoreCompileInputs.cache" />
+      <Content Include="obj\Debug\net8.0\JenkinsCD.csproj.FileListAbsolute.txt" />
+      <Content Include="obj\Debug\net8.0\JenkinsCD.csproj.Up2Date" />
+      <Content Include="obj\Debug\net8.0\JenkinsCD.genruntimeconfig.cache" />
+      <Content Include="obj\Debug\net8.0\JenkinsCD.MvcApplicationPartsAssemblyInfo.cache" />
+      <Content Include="obj\Debug\net8.0\staticwebassets.build.json" />
+      <Content Include="obj\JenkinsCD.csproj.nuget.dgspec.json" />
+      <Content Include="obj\project.assets.json" />
+      <Content Include="obj\project.nuget.cache" />
+      <Content Include="obj\project.packagespec.json" />
+      <Content Include="obj\rider.project.restore.info" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+      <Compile Include="obj\Debug\net8.0\JenkinsCD.MvcApplicationPartsAssemblyInfo.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="obj\Debug\net8.0\JenkinsCD.dll" />
     </ItemGroup>
 
 </Project>
